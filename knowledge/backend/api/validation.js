@@ -8,11 +8,11 @@ module.exports = app => {
   function notExistsOrError(value, msg) {
     try {
       existsOrError(value, msg)
-    } catch {
+    } catch(msg) {
       return
     }
 
-    return msg
+    throw msg
   }
 
   function equalsOrError(valueA, valueB, msg) {
