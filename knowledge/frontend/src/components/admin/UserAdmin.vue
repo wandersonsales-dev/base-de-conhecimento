@@ -20,7 +20,7 @@ export default {
         { key: 'name', label: 'Nome', sortable: true },
         { key: 'email', label: 'E-mail', sortable: true },
         { key: 'admin', label: 'Administrador', sortable: true,
-          formatter: valeu => value ? 'Sim' : 'Não' },
+          formatter: value => value ? 'Sim' : 'Não' },
         { key: 'actions', label: "Ações" }
       ]
     }
